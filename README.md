@@ -1,4 +1,3 @@
-# ST115 Coursework
 # Commodity News and Volatility
 - Built a weekly panel linking abnormal Guardian coverage to realised volatility across Brent, Gold, Natural Gas and Wheat,
 from 6,520 articles (2020–2026) and daily futures prices; measured coverage as a trailing 52-week z-score and volatility as
