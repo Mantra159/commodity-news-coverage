@@ -1,9 +1,19 @@
-# Commodity News and Volatility
-- Built a weekly panel linking abnormal Guardian coverage to realised volatility across Brent, Gold, Natural Gas and Wheat,
-from 6,520 articles (2020–2026) and daily futures prices; measured coverage as a trailing 52-week z-score and volatility as
-summed squared daily returns (group of 4).
-- Added coverage to a HAR-style forecast of next-week realised volatility, evaluated out of sample on an expanding window:
-reduced MSE by 7.2%, Diebold–Mariano p = 0.028; the same signal carried no directional information (−0.015
-out-of-sample R2 on signed returns), consistent with news widening the distribution rather than shifting its mean.
+# Commodity News Coverage
 
-(part of ST115 coursework, awarded a first class)
+How does the Guardian's coverage of geopolitical crises relate to commodity prices?
+
+Group project for ST115 (Managing and Visualising Data), LSE, 2026. Group of four.
+
+## What's in it
+- **Data:** 6,515 Guardian articles (Jan 2020 – Mar 2026, via the Guardian API) and weekly
+  prices for Brent oil, gold, natural gas and wheat (via yfinance)
+- **Analysis:** data quality checks, cleaning, exploratory analysis and visualisations answering:
+  1. How does coverage change around geopolitical events?
+  2. Which commodities get the most attention, and how has that shifted?
+  3. Is there a visible relationship between coverage and prices?
+
+## Run it
+Add your own Guardian API key to `keys.json` as `{"guardian": "YOUR_KEY"}`,
+then open `st115-merged.ipynb`.
+
+Built with Python, pandas and matplotlib.
